@@ -7,4 +7,4 @@ const Error = (err,req,res,next) => {
     })
 }
 
-module.exports={Error}
+module.exports=Error
