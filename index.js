@@ -6,6 +6,7 @@ const env = require("dotenv");
 env.config();
 const port = process.env.PORT || 8000;
 const userRoute = require("./route")
+const Error = require("./ErrorHandler");
 
 mongoose.connect(process.env.DATABASE_URL).then(()=> {
     console.log("Database connected")
@@ -18,7 +19,7 @@ app.use(cors({
 }))
 
 app.use("/api/user",userRoute)
-
+app.use(Error);
 app.listen(port,()=>{
     console.log(`server is running on ${port}`)
 })
