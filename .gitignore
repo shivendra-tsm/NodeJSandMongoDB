@@ -67,3 +67,5 @@ node_modules/.vite/
 
 # VS Code settings
 .vscode/
+
+uploads/
