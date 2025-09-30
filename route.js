@@ -4,7 +4,7 @@ const route = express.Router();
 
 route.get("/hello",HelloFun);
 
-route.post("register",Register);
-route.post("login",Login);
+route.post("/register",Register);
+route.post("/login",Login);
 
 module.exports=route
