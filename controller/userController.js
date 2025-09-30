@@ -1,6 +1,6 @@
-const ErrorHandler = require("./middleware/ErrorHandlingClass");
-const userSchema = require("./models/userModel");
-const { hashPassword, createToken, verifyPasswrod } = require("./utils");
+const ErrorHandler = require("../middleware/ErrorHandlingClass");
+const userSchema = require("../models/userModel");
+const { hashPassword, createToken, verifyPasswrod } = require("../utils");
 
 const HelloFun = async(req,res)=> {
     return res.status(200).json({
